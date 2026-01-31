@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Brain, ArrowRight, Lock, Mail, User as UserIcon, AlertCircle } from 'lucide-react';
-import { User } from '../types';
+import { User } from '../../types';
 import { authService } from '../services/authService';
 
 interface AuthScreenProps {
@@ -68,17 +68,15 @@ const AuthScreen: React.FC<AuthScreenProps> = ({ onAuthSuccess }) => {
           <div className="flex bg-slate-950 rounded-xl p-1 mb-8 border border-slate-800">
             <button
               onClick={() => { setIsLogin(false); setError(''); }}
-              className={`flex-1 py-2 text-sm font-medium rounded-lg transition-all ${
-                !isLogin ? 'bg-indigo-600 text-white shadow-lg' : 'text-slate-400 hover:text-slate-200'
-              }`}
+              className={`flex-1 py-2 text-sm font-medium rounded-lg transition-all ${!isLogin ? 'bg-indigo-600 text-white shadow-lg' : 'text-slate-400 hover:text-slate-200'
+                }`}
             >
               Sign Up
             </button>
             <button
               onClick={() => { setIsLogin(true); setError(''); }}
-              className={`flex-1 py-2 text-sm font-medium rounded-lg transition-all ${
-                isLogin ? 'bg-indigo-600 text-white shadow-lg' : 'text-slate-400 hover:text-slate-200'
-              }`}
+              className={`flex-1 py-2 text-sm font-medium rounded-lg transition-all ${isLogin ? 'bg-indigo-600 text-white shadow-lg' : 'text-slate-400 hover:text-slate-200'
+                }`}
             >
               Sign In
             </button>
