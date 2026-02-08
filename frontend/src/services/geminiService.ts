@@ -1,7 +1,7 @@
 import { GoogleGenAI, Type } from "@google/genai";
 import { Decision, DecisionAnalysis, Emotion, OutcomeAnalysis } from "../../types";
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
 
 // Using gemini-3-pro-preview for complex reasoning tasks
 const MODEL_NAME = 'gemini-2.5-flash'
