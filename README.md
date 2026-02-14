@@ -2,6 +2,8 @@
 
 **CogniClear** is an AI-powered decision-making assistant designed to help you navigate complex choices with clarity and confidence. Built for the **Gemini API Hackathon**, it acts as an unbiased second brain, identifying blind spots, simulating outcomes, and tracking your decision patterns over time.
 
+[CogniClear](https://cogni-clear-frontend.vercel.app/)
+
 ## 🚀 Features
 
 - **AI-Driven Analysis**: Leverages Google's Gemini AI to analyze your decisions for cognitive biases, potential risks, and alternative perspectives.
